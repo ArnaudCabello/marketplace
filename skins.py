@@ -82,7 +82,7 @@ def write_to_csv(acessory, name, last_sold, csv_filename):
             writer.writeheader()
 
         # Write data to CSV with timestamp
-        writer.writerow({"Timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"), "Gun": pretty_name[5:], "Last Sold":last_sold})
+        writer.writerow({"Timestamp": datetime.now().strftime("%Y-%m-%d %H:%M"), "Gun": pretty_name[5:], "Last Sold":last_sold})
 
 # Example usage:
 
@@ -158,4 +158,4 @@ for w_item in w2:
 #item_manager.display_items_by_category("2019")
 while True:
     item_manager.display_items_by_category("Glacier")
-    time.sleep(3600)
+    time.sleep(300)
