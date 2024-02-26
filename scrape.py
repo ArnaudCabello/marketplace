@@ -68,8 +68,8 @@ handles = driver.window_handles
 for handle in handles:
     driver.switch_to.window(handle)
     if(currHand != handle):
-        driver.find_element(by=By.XPATH, value='//*[@id="AuthEmail"]').send_keys("Cabello.9@osu.edu")
-        driver.find_element(by=By.XPATH, value='//*[@id="AuthPassword"]').send_keys("Fifth5Account*")
+        driver.find_element(by=By.XPATH, value='//*[@id="AuthEmail"]').send_keys("Username")
+        driver.find_element(by=By.XPATH, value='//*[@id="AuthPassword"]').send_keys("Password")
         driver.find_element(by=By.XPATH, value='/html/body/app-component/div/app-login-component/main/app-login-shared-component/section/form/button').click()
     
     driver.switch_to.window(currHand)
